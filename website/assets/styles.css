@@ -1,0 +1,64 @@
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+/*
+ * First, let's define some global variables that we can reference later on in this style.
+ */
+:root {
+    /* Our serif font, used for display body text */
+    --serif-font: "Gilda Display", serif;
+
+    /* Our sans font, used for headers. */
+    --sans-font: "Xanh Mono", monospace;
+
+    /* Our monospace font, used for accenting. */
+    --mono-font: "Xanh Mono", monospace;
+
+    /* Our colors. */
+    --yellow: rgb(235, 205, 96);
+    --black: rgb(20, 20, 20);
+    --gray: rgb(120, 120, 120);
+}
+
+
+/*
+ * The body should be 
+ */
+body {
+    font-family: var(--serif-font);
+
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+header {
+    font-family: var(--sans-font);
+    font-size: 1.35rem;
+
+    margin-top: 2rem;
+}
+
+.container {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aapa-description {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+
+    font-weight: 500;
+}
+
+.wavy {
+    text-decoration-style: wavy;
+    text-decoration-line: underline;
+}
+
+a.btn-action-disabled {
+    padding: 1rem;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+}
