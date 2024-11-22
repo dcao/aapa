@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 
@@ -10,7 +10,7 @@
     --serif-font: "Gilda Display", serif;
 
     /* Our sans font, used for headers. */
-    --sans-font: "Xanh Mono", monospace;
+    --sans-font: "IBM Plex Sans", monospace;
 
     /* Our monospace font, used for accenting. */
     --mono-font: "Xanh Mono", monospace;
@@ -33,7 +33,7 @@ body {
 }
 
 header {
-    font-family: var(--sans-font);
+    font-family: var(--mono-font);
     font-size: 1.35rem;
 
     margin-top: 2rem;
@@ -57,8 +57,14 @@ header {
     text-decoration-line: underline;
 }
 
-a.btn-action-disabled {
+a.btn{
     padding: 1rem;
-    border: 1px solid var(--gray);
-    color: var(--gray);
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+
+/* Images are full width */
+img {
+    width: 100%;
+    height: auto;      
 }

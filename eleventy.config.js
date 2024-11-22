@@ -1,4 +1,5 @@
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { parse } from "csv-parse/sync";
 import { readFileSync } from "fs";
 
@@ -23,7 +24,25 @@ export default async function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('website/assets');
     eleventyConfig.setLayoutsDirectory("_layouts");
 
-    eleventyConfig.addPassthroughCopy('website/media/files');
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+        // which file extensions to process
+        extensions: "html,liquid",
+
+        // optional, output image formats
+        // formats: ["webp", "jpeg"],
+        // formats: ["auto"],
+
+        // optional, output image widths
+        // widths: ["auto"],
+
+        // optional, attributes assigned on <img> override these values.
+        // defaultAttributes: {
+        //     loading: "lazy",
+        //     decoding: "async",
+        // },
+    });
+
+    eleventyConfig.addPassthroughCopy('website/_data/files');
     eleventyConfig.addDataExtension("csv", (contents) => {
         const records = parse(contents, {
             columns: true,
@@ -37,7 +56,7 @@ export default async function(eleventyConfig) {
         const path = `media/${mediaItem.filename}.liquid`;
         eleventyConfig.addTemplate(path, mediaItem.description, {
             layout: "media.liquid",
-            filename: mediaItem.filename,
+            mediaItem: mediaItem,
         });
     }
 };
