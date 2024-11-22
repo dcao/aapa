@@ -1,10 +1,26 @@
 ---
 layout: base
+pagination:
+  data: archives
+  size: 12
 ---
 
+{% assign pageCount = pagination.pages | size %}
+{% assign curPage = pagination.pageNumber | plus:1 %}
+
 <div class="grid-system square">
+    <div class="archives-placeholder"></div>
     <h2 class="archives-body">Archives</h2>
-    {% for row in archives %}
+    <p class="archives-page">
+        Page {{ curPage }}/{{ pageCount }}
+        {% if pagination.href.previous %}
+            <a href="{{pagination.href.previous}}">prev</a>
+        {% endif %}
+        {% if pagination.href.next %}
+            <a href="{{pagination.href.next}}">next</a>
+        {% endif %}
+    </p>
+    {% for row in pagination.items %}
         <div>
             {% render "archive" filename: row.filename %}
         </div>

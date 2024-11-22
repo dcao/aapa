@@ -108,10 +108,21 @@ header {
         grid-column: 3/span 2;
     }
 
+    .archives-placeholder {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
     .archives-body {
         /* -1rem to account for edge margin */
         margin-top: calc(var(--nav-height) + 3rem);
+        grid-row: 1;
         grid-column: 2/span 3;
+    }
+    .archives-page {
+        margin-top: calc(var(--nav-height) + 3rem);
+        grid-row: 1;
+        grid-column: 4/span 1;
     }
 }
 
