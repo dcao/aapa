@@ -54,10 +54,13 @@ body {
     text-decoration-line: underline;
 }
 
-a.btn{
+a.btn {
     padding: 1rem;
-    border: 1px solid var(--black);
     color: var(--black);
+}
+
+a.btn:hover {
+    opacity: 60%;
 }
 
 header {
