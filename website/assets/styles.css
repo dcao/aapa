@@ -19,6 +19,9 @@
     --yellow: rgb(235, 205, 96);
     --black: rgb(20, 20, 20);
     --gray: rgb(120, 120, 120);
+
+    /* Navbar height */
+    --nav-height: 4.5rem;
 }
 
 
@@ -30,13 +33,8 @@ body {
 
     background-color: var(--yellow);
     color: var(--black);
-}
 
-header {
-    font-family: var(--mono-font);
-    font-size: 1.35rem;
-
-    margin-top: 2rem;
+    margin: 0;
 }
 
 .container {
@@ -46,7 +44,6 @@ header {
 }
 
 #aapa-description {
-    margin-top: 4rem;
     font-size: 1.5rem;
 
     font-weight: 500;
@@ -63,8 +60,105 @@ a.btn{
     color: var(--black);
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    font-family: var(--sans-font);
+    justify-content: space-between;
+
+    height: var(--nav-height);
+    /* padding: 1rem 1rem; */
+    padding: 0 1rem;
+    /* border-bottom: 1px solid var(--black); */
+
+    font-size: 1rem;
+
+    z-index: 999;
+
+    a:link, a:visited, a:active {
+        color: var(--yellow);
+        text-decoration: none;
+    }
+
+    a:hover {
+        /* color: color-mix(in hsl, var(--black), var(--yellow) 50%); */
+        opacity: 60%;
+    }
+
+    .nav-center {
+        font-family: var(--mono-font);
+        font-size: 1.1rem;
+    }
+
+    .nav-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-fill {
+        display: flex;
+        width: 20%;
+        gap: 0.75rem;
+    }
+
+    .nav-fill.r {
+        justify-content: flex-end;
+    }
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    mix-blend-mode: difference;
+}
+
+.grid-system {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem;
+
+    &.full {
+        grid-template-rows: repeat(8, 1fr);
+        height: 100vh;
+    }
+
+    .home-image {
+        width: 32rem;
+        grid-row: 3/span 1;
+        grid-column: 1/span 2;
+    }
+
+    .home-text {
+        grid-row: 3/span 1;
+        grid-column: 3/span 2;
+    }
+
+    .archives-body {
+        /* -1rem to account for edge margin */
+        margin-top: calc(var(--nav-height) - 1rem);
+        grid-column: 3/span 2;
+    }
+}
+
 /* Images are full width */
 img {
     width: 100%;
     height: auto;      
+}
+
+img.aapa-logo {
+    height: 2.5rem;
+    width: auto;
+    margin: 0 0.5rem;
+}
+
+.home-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5rem;
 }

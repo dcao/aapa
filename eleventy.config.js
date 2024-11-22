@@ -3,8 +3,8 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { parse } from "csv-parse/sync";
 import { readFileSync } from "fs";
 
-function readMedia() {
-    const input = readFileSync("./website/_data/media.csv");
+function readArchives() {
+    const input = readFileSync("./website/_data/archives.csv");
     const records = parse(input, {
         columns: true,
         skip_empty_lines: true,
@@ -50,13 +50,13 @@ export default async function(eleventyConfig) {
         });
         return records;
     });
-    const media = readMedia();
+    const archives = readArchives();
 
-    for (const mediaItem of media) {
-        const path = `media/${mediaItem.filename}.liquid`;
-        eleventyConfig.addTemplate(path, mediaItem.description, {
-            layout: "media.liquid",
-            mediaItem: mediaItem,
+    for (const archive of archives) {
+        const path = `archives/${archive.filename}.liquid`;
+        eleventyConfig.addTemplate(path, archive.description, {
+            layout: "archive.liquid",
+            archive: archive,
         });
     }
 };

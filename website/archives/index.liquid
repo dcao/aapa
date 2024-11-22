@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+<div class="grid-system">
+    <div class="archives-body">
+        <h1>Archives</h1>
+
+        {% for row in archives %}
+            <div><a href="/archives/{{ row.filename }}">{{ row.filename }}</a></div>
+        {% endfor %}
+    </div>
+</div>
