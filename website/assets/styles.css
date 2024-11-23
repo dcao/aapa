@@ -110,15 +110,16 @@ header {
 
     .archives-placeholder {
         grid-row: 1;
-        grid-column: 1;
+        grid-column: 1/span 2;
     }
 
     .archives-body {
         /* -1rem to account for edge margin */
         margin-top: calc(var(--nav-height) + 3rem);
         grid-row: 1;
-        grid-column: 2/span 3;
+        grid-column: 3/span 2;
     }
+
     .archives-page {
         margin-top: calc(var(--nav-height) + 3rem);
         grid-row: 1;
@@ -181,4 +182,8 @@ img.aapa-logo {
     height: 2.5rem;
     width: auto;
     margin: 0 0.5rem;
+}
+
+.mono {
+    font-family: var(--mono-font);
 }

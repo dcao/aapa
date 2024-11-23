@@ -10,15 +10,17 @@ pagination:
 
 <div class="grid-system square">
     <div class="archives-placeholder"></div>
-    <h2 class="archives-body">Archives</h2>
-    <p class="archives-page">
-        Page {{ curPage }}/{{ pageCount }}
+    <h2 class="mono archives-body">
+        Archives
+        p. {{ curPage }}/{{ pageCount }}
         {% if pagination.href.previous %}
             <a href="{{pagination.href.previous}}">prev</a>
         {% endif %}
         {% if pagination.href.next %}
             <a href="{{pagination.href.next}}">next</a>
         {% endif %}
+    </h2>
+    <p class="mono archives-page">
     </p>
     {% for row in pagination.items %}
         <div>
