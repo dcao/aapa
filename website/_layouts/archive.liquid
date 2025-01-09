@@ -2,10 +2,34 @@
 layout: base
 ---
 
-<div class="container" style="margin-top: 4rem; font-size: 1.25rem;">
-    <img src="/_data/files/{{ archive.filename }}" alt="{{ archive.description }}" />
-    <h2>{{ archive.title }}</h2>
-    <p>{{ content }}</p>
-    <p>{{ archive.date }}</p>
-    <p>{{ archive.source }}</p>
+<div class="archives-page">
+    <div class="archives-desc yellow">
+        <div class="hidden-smol">
+            <hr />
+            <h1>{{ archive.title }}</h1>
+        </div>
+
+        <div class="info">
+            <p class="description sans">{{ archive.description }}</p>
+            <hr />
+            <div class="info-row">
+                <span class="sans">Date</span>
+                <span class="mono">{{ archive.date }}</span>
+            </div>
+            <div class="info-row">
+                <span class="sans">Location</span>
+                <span class="mono">{{ archive.location }}</span>
+            </div>
+            <div class="info-row">
+                <span class="sans">Source</span>
+                <span class="mono">{{ archive.source }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="archives-image black">
+        <img src="/_data/files/{{ archive.filename }}" alt="{{ archive.description }}" />
+    </div>
+    <div class="title-only hidden-big yellow">
+        <h1>{{ archive.title }}</h1>
+    </div>
 </div>

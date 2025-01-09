@@ -31,14 +31,26 @@
 body {
     font-family: var(--serif-font);
 
+    /*
     background-color: var(--yellow);
     color: var(--black);
+    */
 
     margin: 0;
 }
 
+.yellow {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.black {
+    color: var(--yellow);
+    background-color: var(--black);
+}
+
 .container {
-    max-width: 40rem;
+    max-width: 55ch;
     margin-left: auto;
     margin-right: auto;
 }
@@ -73,26 +85,31 @@ header {
     mix-blend-mode: difference;
 }
 
+.full {
+    height: 100vh;
+}
+
+/* Grid system common */
 .grid-system {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 1rem;
-    gap: 0.5rem;
+    grid-template-columns: repeat(12, 1fr);
 
     &.full {
         grid-template-rows: repeat(8, 1fr);
-        height: 100vh;
     }
 
     &.square img {
         object-fit: cover;
         aspect-ratio: 1;
     }
+}
 
+/* Grid system for home page */
+.grid-system {
     .home-image {
         width: 32rem;
         grid-row: 3/span 1;
-        grid-column: 1/span 2;
+        grid-column: 1/span 6;
 
         .caption {
             font-family: var(--sans-font);
@@ -105,25 +122,135 @@ header {
 
     .home-text {
         grid-row: 3/span 1;
-        grid-column: 3/span 2;
+        grid-column: 7/span 6;
+    }
+}
+
+.hidden-smol {
+    @media (width <= 1000px) {
+        display: none;
+    }
+}
+
+.hidden-big {
+    @media (width > 1000px) {
+        display: none;
+    }
+}
+
+/* How should the archival page be displayed? */
+.archives-page {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+    .archives-desc {
+        width: 33%;
+        padding-top: calc(var(--nav-height) + 3rem);
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        p.description {
+            font-size: 1.25rem;
+        }
+
+        hr {
+            color: var(--black);
+            opacity: 10%
+        }
+
+        .info {
+            padding-top: 0.5rem;
+
+            .info-row {
+                display: flex;
+                align-items: baseline;
+                padding: 0.25rem 0;
+
+                span:first-of-type {
+                    width: 33%;
+                    opacity: 55%;
+                    font-size: 1.25rem;
+                }
+
+                span:last-of-type {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .archives-image {
+        grid-column: 5/span 8;
+        height: 100%;
+        flex-grow: 1;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-height: 80vh;
+            /* Preserve aspect ratio */
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
     }
 
     .archives-placeholder {
         grid-row: 1;
-        grid-column: 1/span 2;
+        grid-column: 1/span 6;
     }
 
     .archives-body {
         /* -1rem to account for edge margin */
         margin-top: calc(var(--nav-height) + 3rem);
         grid-row: 1;
-        grid-column: 3/span 2;
+        grid-column: 7/span 6;
     }
 
     .archives-page {
         margin-top: calc(var(--nav-height) + 3rem);
         grid-row: 1;
-        grid-column: 4/span 1;
+        grid-column: 10/span 3;
+    }
+}
+
+@media (width <= 1000px) {
+    .archives-page {
+        flex-direction: column-reverse;
+        min-height: 100vh;
+        height: auto;
+        width: 100vw;
+
+        .title-only {
+            font-size: 0.85rem;
+            padding: calc(var(--nav-height) + 2rem) 1rem 0 1rem;
+            width: auto;
+
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .archives-image {
+            width: auto;
+
+            padding: 4rem;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        .archives-desc {
+            width: auto;
+
+            padding-top: 0;
+            padding-bottom: 1rem;
+        }
     }
 }
 
@@ -141,6 +268,10 @@ nav {
     font-size: 1rem;
 
     z-index: 999;
+
+    & .left {
+        text-align: right;
+    }
 
     a:link, a:visited, a:active {
         color: var(--yellow);
@@ -163,19 +294,13 @@ nav {
 
     .nav-fill {
         display: flex;
-        width: 20%;
+        width: 15%;
         gap: 0.75rem;
     }
 
     .nav-fill.r {
         justify-content: flex-end;
     }
-}
-
-/* Images are full width */
-img {
-    width: 100%;
-    height: auto;      
 }
 
 img.aapa-logo {
@@ -186,4 +311,8 @@ img.aapa-logo {
 
 .mono {
     font-family: var(--mono-font);
+}
+
+.sans {
+    font-family: var(--sans-font);
 }
