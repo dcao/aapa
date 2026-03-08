@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>aapa</title>
+        <link href="/src/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="w-screen flex flex-row fixed z-100 text-olive-300 px-3 py-4">
+            <div class="text-xl flex-grow">
+                <a href="/" class="hover:underline">
+                    <p class="font-sans leading-[1.15]">Asian American</p>
+                    <p class="font-serif leading-[1.15]">Movement Archive</p>
+                </a>
+            </div>
+
+            <div class="flex flex-row gap-3 text-lg">
+                <a href="#" class="hover:underline leading-[1.15]">About</a>
+                <a href="/history" class="hover:underline leading-[1.15]">History</a>
+                <a href="#" class="hover:underline leading-[1.15]">Ask the OGs</a>
+                <a href="#" class="hover:underline leading-[1.15]">Movement Art & Statements</a>
+            </div>
+        </header>
+
+        <div class="min-h-screen w-screen bg-cover text-olive-200 grid grid-cols-12">
+            <div class="min-h-screen bg-olive-950 col-span-5 px-3 pt-24">
+                <div class="pt-24">
+                    <p class="text-3xl font-serif">Ask the OGs</p>
+
+                    <p class="text-olive-300 text-lg mt-2">
+                        Have an organizing related question? Submit. We'll respond below...
+                    </p>
+
+                    <div class="mt-8 px-4 py-5 rounded-lg border border-olive-700 focus-within:border-olive-700 focus-within:bg-olive-900/50">
+                        <textarea class="w-full min-h-48 resize-none outline-none placeholder:text-olive-500" placeholder="Enter a question here"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="min-h-screen bg-olive-900 col-span-7 px-3 pt-24 border-olive-900 focus-within:border-olive-700">
+                <div class="pt-24">
+                    <p class="text-3xl font-serif">Browse responses</p>
+                    <p class="mt-2 text-lg">
+                        Browse responses to past questions.
+                    </p>
+
+                    <div class="flex flex-row mt-8 w-full p-4 bg-olive-800 rounded gap-1">
+                        <!-- Should be search bar, sort by -->
+                        <div class="flex-grow">
+                            <input type="text" class="w-full outline-none placeholder:text-olive-500" placeholder="Search past questions" />
+                        </div>
+                        <p class="text-olive-500">
+                            Group by
+                        </p>
+                        <div class="ml-3 flex flex-row gap-2">
+                            <a href="#" class="underline">Topic</a>
+                            <a href="#">Date</a>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 grid grid-cols-7 items-baseline text-olive-400">
+                        <p class="font-mono col-span-1">2025-05-04</p>
+                        <a href="#" class="duration-100 hover:text-olive-300 font-serif text-xl col-span-6">Why did this particular thing happen? →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <script type="module" src="/src/main.ts"></script> -->
+    </body>
+</html>

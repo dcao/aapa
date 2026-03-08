@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Times New Roman", serif;
+  --font-sans: "Arial", sans-serif;
+  --font-mono: "Iosevka", monospace;
+}
