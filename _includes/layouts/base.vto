@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ title }} - Asian American Movement Archive</title>
+        <link href="/css/style.css" rel="stylesheet">
+        {{ header }}
+    </head>
+    <body>
+        <header class="w-screen flex flex-row fixed z-100 mix-blend-difference text-olive-100 px-3 py-4">
+            <div class="text-xl flex-grow">
+                <a href="/" class="hover:underline">
+                    <p class="font-sans leading-[1.15]">Asian American</p>
+                    <p class="font-serif leading-[1.15]">Movement Archive</p>
+                </a>
+            </div>
+
+            <div class="flex flex-row gap-4 text-lg">
+                <a href="#" class="hover:underline leading-[1.15]">About</a>
+                <a href="#" class="hover:underline leading-[1.15]">History</a>
+                <a href="/ask" class="hover:underline leading-[1.15]">Ask the OGs</a>
+                <a href="#" class="hover:underline leading-[1.15]">Browse the Collection</a>
+            </div>
+        </header>
+
+        <main>
+            {{ content }}
+        </main>
+    </body>
+</html>
