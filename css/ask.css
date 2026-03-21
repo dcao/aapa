@@ -1,0 +1,95 @@
+@reference "../css/style.css";
+
+#content {
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-serif
+    }
+
+    h1 {
+        @apply text-3xl text-olive-900
+    }
+
+    p + h1 {
+        @apply mt-6 
+    }
+
+    h2 {
+        @apply text-2xl text-olive-900
+    }
+
+    p + h2 {
+        @apply mt-10
+    }
+
+    h3 {
+        @apply text-[1.35em] text-olive-800
+    }
+
+    p + h3 {
+        @apply mt-8
+    }
+
+    h4 {
+        @apply text-xl text-olive-800
+    }
+
+    p + h3 {
+        @apply mt-6
+    }
+
+    ul {
+        @apply list-disc list-inside mt-2
+    }
+
+    ul ul {
+        @apply ml-6;
+    }
+
+    ol {
+        @apply list-decimal list-inside;
+    }
+
+    li > p {
+        @apply inline;
+    }
+
+    img {
+        @apply pt-4 pb-2;
+    }
+
+    img:has(+ em) {
+        @apply pb-0 mb-0;
+    }
+
+    img + em {
+        @apply p-4 bg-olive-300 text-base block;
+    }
+    
+    * {
+        @apply text-xl mb-4 text-olive-700
+    }
+
+    :last-child {
+        @apply mb-0
+    }
+
+    a {
+        @apply underline text-blue-800 hover:text-blue-900;
+    }
+
+    a.wikilink.valid {
+        @apply underline text-lime-800 hover:text-lime-900;
+    }
+
+    a.wikilink.invalid {
+        @apply text-olive-500 cursor-not-allowed;
+    }
+
+    blockquote {
+        @apply p-4 border-s-3 bg-olive-300/50;
+    }
+
+    blockquote * {
+        @apply italic text-base;
+    }
+}

@@ -11,27 +11,28 @@ title: Default ask
 <article class="min-w-screen min-h-screen bg-olive-200">
     <header class="pt-24 pb-8 px-3 bg-olive-900 text-olive-100">
         <div class="max-w-6xl mx-auto">
-            <p class="text-lg font-serif text-olive-400 "><a href="/ask" class="underline hover:text-olive-200">← Back to all asks</a> • Last updated {{ date |> date("MMM dd, yyyy") }}</p>
+            {{# <p class="text-lg font-serif text-olive-400 "><a href="/ask" class="underline hover:text-olive-200">← Back to all asks</a> • Last updated {{ date |> date("MMM dd, yyyy") }}</p> #}}
             <div class="pt-7 pb-5 flex flex-row justify-baseline">
                 <p class="font-serif text-olive-100 text-4xl">{{ title }}</p>
             </div>
             {{ if description }}
                 <p class="text-lg text-olive-300 max-w-2xl pb-2">{{ description }}</p>
             {{ /if }}
+            <p class="text-lg font-serif text-olive-400 ">Last updated {{ date |> date("MMM dd, yyyy") }}</p>
         </div>
     </header>
 
     <div class="px-3 pt-8" id="content">
         <div class="max-w-6xl mx-auto">
-            <div class="max-w-2xl">
+            <div class="max-w-2xl pb-8">
                 {{ content }}
 
-                {{ if search.pages(`wikilinks*='${basename}'`).length > 0 }}
+                {{ if search.pages(`wikilinks*='${basename.toLowerCase()}'`).length > 0 }}
                 <div class="p-4 mt-24 border-1 rounded border-olive-500">
                     {{# <hr /> #}}
                     <h4 class="pb-4 text-olive-600!">Links to this page</h4>
                     <ul class="">
-                        {{ for link of search.pages(`wikilinks*='${basename}'`) }}
+                        {{ for link of search.pages(`wikilinks*='${basename.toLowerCase()}'`) }}
                             <li><a class="underline font-serif! text-md! wikilink valid" href="{{ link.url }}">{{ link.title }}</a></li>
                         {{ /for }}
                     </ul>

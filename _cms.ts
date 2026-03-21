@@ -2,11 +2,21 @@ import lumeCMS from "lume/cms/mod.ts";
 
 const cms = lumeCMS();
 
+// cms.git();
+
+cms.upload({
+    name: "images",
+    store: "src:img",
+});
+
 // Use the cms instance to configure LumeCMS
-cms.collection("posts", "src:ask/*.md", [
-    "layout: hidden",
+cms.collection("pages", "src:pages/*.md", [
     "title: text",
-    "content: markdown",
+    {
+        name: "content",
+        type: "markdown",
+        upload: "images"
+    },
     "tags: list",
     "date: date",
 ]);

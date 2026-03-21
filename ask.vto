@@ -9,8 +9,7 @@ layout: layouts/base.vto
             <p class="text-3xl font-serif">Ask the OGs</p>
 
             <p class="text-olive-300 text-lg mt-2">
-                If you a question related to —past or present .
-                One of the OGs will get back to you (etc. etc.)
+                TODO
             </p>
 
             <form
@@ -81,9 +80,9 @@ layout: layouts/base.vto
             </div> #}}
 
             <div class="mt-6 text-olive-300">
-                {{ for ask of search.pages("ask", "desc=date") }}
+                {{ for ask of search.pages("ask", "date=desc") }}
                 <div class="mb-2 grid grid-cols-7 items-baseline">
-                    <p class="font-mono col-span-1">{{ ask.date |> date }}</p>
+                    <p class="col-span-1 text-olive-400">{{ ask.date |> date("MMM d, yyyy") }}</p>
                     <a href="{{ ask.url }}" class="duration-100 hover:text-olive-200 font-serif text-xl col-span-6">{{
                         ask.title }}</a>
                     {{ if ask.description }}

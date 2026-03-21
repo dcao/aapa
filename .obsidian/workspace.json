@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "ad13234210bd596c",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab22de25c415ae55",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c284bec2047ec93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pages/Richard Aoki.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Richard Aoki"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b0bddb2d67d4fb43",
+    "type": "split",
+    "children": [
+      {
+        "id": "0db905c538c0b3aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac87bc1712e2743f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "41955f8f0f88c79b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2a61fe30dcdee5ef",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f34508f41ab47244",
+    "type": "split",
+    "children": [
+      {
+        "id": "534df5c2a8667b79",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95eb96d469c3d26c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "a276baebe1939879",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "2c2ac285c8347a9e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e498a181ee151286",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "1ea274d5799b5f01",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "7c284bec2047ec93",
+  "lastOpenFiles": [
+    "pages/Asian Studies.md",
+    "_site/img/aapademosfcsum1968.png",
+    "_site/img/screenshot-2026-01-05-at-6.20.07-pm.png",
+    "_site/img/0-16.jpg",
+    "_site/img/screenshot-2026-01-05-at-6.37.33-pm.png",
+    "_site/img/screenshot-2026-01-05-at-6.29.37-pm.png",
+    "img/aapademosfcsum1968.png",
+    "img/screenshot-2026-01-05-at-6.20.07-pm.png",
+    "img/0-16.jpg",
+    "img/screenshot-2026-01-05-at-6.37.33-pm.png",
+    "img/screenshot-2026-01-05-at-6.29.37-pm.png",
+    "pages/AAPA.md",
+    "pages/ACC.md",
+    "pages/Today.md",
+    "pages/Richard Aoki.md",
+    "_site/img",
+    "_site/js/index.js",
+    "_site/js",
+    "_site/index.html",
+    "_site/css/style.css",
+    "_site/css/ask.css",
+    "_site/css",
+    "_site/pages/Today/index.html",
+    "_site/pages/Richard Aoki/index.html",
+    "_site/pages/Music/index.html",
+    "pages/Music.md",
+    "pages/Martial arts.md",
+    "pages/Logistics.md",
+    "pages/richard-aoki.md",
+    "ask/martial-arts.md",
+    "pages/martial-arts.md",
+    "pages/gary-okihiro.md",
+    "pages/asian-studies.md",
+    "ask/logistics.md",
+    "ask/strikes.md",
+    "ask/gary-okihiro.md",
+    "martial arts.md",
+    "ask/asian-studies.md",
+    "ask/acc.md",
+    "ask/aapa.md"
+  ]
+}
