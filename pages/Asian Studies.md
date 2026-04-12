@@ -1,6 +1,5 @@
 ---
 title: What changes did the TWLF strikes lead to at the university?
-layout: layouts/ask.vto
 tags:
   - ask
 description: |

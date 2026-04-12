@@ -47,29 +47,20 @@ On the other hand, there are reasons to believe that the account of the journali
 2. **Richard Aoki's "handler"**. Rosenfeld's claim is supported by interviews with Burney Threadgill Jr., the FBI agent who allegedly "developed him." Again, the number one rule of intelligence agencies is to never reveal sources, and so it's strange that this would be the case.
 3. **Richard Aoki himself**. Conveniently, at the time that Rosenfeld conducted this investigation, Aoki had already passed, and so he was unable to defend himself or dispute these allegations.
 
-****
+Given these things, why would we choose to believe the person who doesn't have personal connections to the situation, and whose sources are largely conveniently unavailable?
 
-- people make shit up all the time
-	- lots of people have lived experience
-	- who is this guy? do you trust him over your lived experience?
-		- journalist, fbi agent who is dead
-		- why would they bluntly reveal their sources? that doesn't make sense
-	- 
-- think of the context. it was the financial crash. people starting to think about capital.
-- why would someone publish something like this?
-	- to discredit the movement! to undermine organizer histories!
-- indeed, other folks believe aoki!
+Second, we should consider the broader political context under which these allegations were made. As these allegations were made, Occupy Wall Street was happening in the background—a historical moment in which folks were turning their attention to capital and capitalism. This article just so happened to occur right as folks were starting to get angry and this and as momentum was building around this movement.
 
-It's important to consider the context that this .
-
-And indeed, it's for this reason that when movement leaders of the 60s reconvened , 
-
+And indeed, why would someone want to publish something like this? It's to discredit the movement and undermine organizer histories—to turn organizers against each other, because if Richard Aoki was an informant, then what was it all for?
 
 ## Sifu Fong's perspective
 
-He was sneaky, played folks against each other. A lot of this info was stuff that people could glean already! And folks in the movement moved assuming that they could be seen and heard at all times.
+The history of Richard Aoki is more complex than it might seem!
 
-He was committed not just to being a leader, but raising other folks to become leaders.
+First of all, he was cunning, and was able to play folks against each other. One of the stories he told: two competing ninja organizations during Tokigawa period in Japan. The one person who was the leader of each of these rival orgs was hired by diff masters to assassinate folks and make political change. Turns out, nobody knew until master died that he commanded both organizations, pitting each other against one another! Richard knew how to play games, both sides of the coin... Getting info out of them that normally they wouldn't tell you
 
-And he lived in an honorable way.
+Much of the information that he was revealed to be passing on was information that was (i) already publicly available and (ii) not information that folks assumed would be private to begin with. Folks in the movement were aware that their phones were being tapped and that a dedicated observer could figure out ways of listening in on their conversations, and so they behaved accordingly.
 
+Moreover, Richard wasn't a leader in the usual sense; he wanted *you* to be out front, to train the people. For instance, at an action, Richard pointed out who the undercover cops were, and would make plans: "If anything happens, I'll take out the guy on the right, you take the guy on the left."
+
+Another story; during the TWLF strikes, Richard and Sifu Fong saw five cops coming to get them!! Richard says: "can you go over there for a minute!" He then jumps the cops and gets arrested. At the trial, Richard then says he was protecting his students. Because he was so much smaller than the five policemen, he got acquitted!
