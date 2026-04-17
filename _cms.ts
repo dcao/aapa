@@ -19,6 +19,7 @@ cms.collection("pages", "src:pages/*.md", [
     },
     "tags: list",
     "date: date",
+    "aliases: list",
 ]);
 
 cms.auth({

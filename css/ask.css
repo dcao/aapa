@@ -2,7 +2,7 @@
 
 #content {
     h1, h2, h3, h4, h5, h6 {
-        @apply font-serif
+        @apply font-serif mb-4
     }
 
     h1 {
@@ -53,6 +53,10 @@
         @apply inline;
     }
 
+    li {
+        @apply mb-4;
+    }
+
     img {
         @apply pt-4 pb-2;
     }
@@ -65,31 +69,32 @@
         @apply p-4 bg-olive-300 text-base block;
     }
     
-    * {
-        @apply text-xl mb-4 text-olive-700
-    }
-
     :last-child {
         @apply mb-0
     }
 
-    a {
-        @apply underline text-blue-800 hover:text-blue-900;
-    }
-
-    a.wikilink.valid {
-        @apply underline text-lime-800 hover:text-lime-900;
-    }
-
-    a.wikilink.invalid {
-        @apply text-olive-500 cursor-not-allowed;
+    p, ul, ol {
+        @apply text-xl mb-4 text-olive-700;
     }
 
     blockquote {
-        @apply p-4 border-s-3 bg-olive-300/50;
+        @apply p-4 border-s-3 bg-olive-300/50 mb-4;
     }
 
     blockquote * {
         @apply italic text-base;
     }
+
+
+    /* a {
+        @apply underline text-blue-800 hover:text-blue-900;
+    } */
+}
+
+a.wikilink.valid {
+    @apply underline text-lime-800 hover:text-lime-900;
+}
+
+a.wikilink.invalid {
+    @apply text-olive-500 cursor-not-allowed;
 }

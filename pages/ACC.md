@@ -9,4 +9,3 @@ description: >
   Hotel (I-Hotel), I Wor Kuen (IWK), the Asian Law Caucus, and Everybody's
   Bookstore
 ---
-dgdgdfgdfgdfgdfgdfg
